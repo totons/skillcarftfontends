@@ -7,6 +7,9 @@ import Script from "next/script";
 import Navigation from "@/components/sections/navigation";
 import Footer from "@/components/sections/footer";
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://skillscraftacademy.com";
+
 // ⛳️ Client component: ensure this file has "use client" at top
 // of ../visual-edits/VisualEditsMessenger.tsx
 
@@ -15,11 +18,11 @@ export const metadata: Metadata = {
   title: "Skill Ctaft ",
   description: "A Next.js 15 app with optimized layout and route messenger.",
   applicationName: "YourApp",
-  metadataBase: new URL("https://your-domain.example"),
+  metadataBase: new URL(siteUrl),
   openGraph: {
     title: "YourApp — Fast & Modern",
     description: "A Next.js 15 app with optimized layout and route messenger.",
-    url: "https://your-domain.example",
+    url: siteUrl,
     siteName: "YourApp",
     type: "website",
   },
@@ -42,13 +45,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link
-          rel="preconnect"
-          href=""
-          crossOrigin=""
-        />
-      </head>
+      <head />
       <body className="antialiased min-h-dvh flex flex-col">
         <Navigation />
 

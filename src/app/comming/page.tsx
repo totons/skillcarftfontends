@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Link from "next/link";
 import { FaClock } from "react-icons/fa"; // Optional, to display an icon
 
 const ComingSoon: FC = () => {
@@ -11,12 +12,12 @@ const ComingSoon: FC = () => {
           We're working hard to bring something amazing. Stay tuned!
         </p>
         <div className="mt-6">
-          <a
+          <Link
             href="/"
             className="px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary/80 transition"
           >
             Go Back to Home
-          </a>
+          </Link>
         </div>
       </div>
     </div>
