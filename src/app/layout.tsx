@@ -8,7 +8,7 @@ import Navigation from "@/components/sections/navigation";
 import Footer from "@/components/sections/footer";
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://skillscraftacademy.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://skillcarftbackend.vercel.app";
 
 // ⛳️ Client component: ensure this file has "use client" at top
 // of ../visual-edits/VisualEditsMessenger.tsx
